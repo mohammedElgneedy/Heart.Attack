@@ -11,11 +11,11 @@ from sklearn.tree import DecisionTreeClassifier
 import m2cgen as m2c
 
 # تحميل البيانات
-df = pd.read_csv("D://New folder/heart.csv")
+df = pd.read_csv("D://New folder/Medicaldataset.csv")
 
 # تحديد المدخلات والمخرجات
-X = df[['thalach']]  # استخدام عمود 'thalach' فقط
-y = df['target']     # الهدف
+X = df[['Heart rate']]  # استخدام عمود 'thalach' فقط
+y = df['Result']     # الهدف
 
 # معالجة القيم المفقودة
 imputer = SimpleImputer(strategy="mean")
